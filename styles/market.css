@@ -1,0 +1,93 @@
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Galano Grotesque Alt', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+/* ////// SIDE BAR MENU //////  */
+.sidebar-menu {
+    padding: 2rem 2rem 2rem 4rem;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+    border-right: 2px solid #00000026;
+}
+
+.sidebar-menu::-webkit-scrollbar{
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.logo a {
+    font-size: 1.437rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-new-token {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #00000026;
+}
+
+.create-new-token button {
+    border: 1px dashed #00000026;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    font-family: 'Galano Grotesque Alt', sans-serif;
+    color: #01C09B;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.my-token, .marketplace, .account, .help {
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.my-token a, .marketplace a, .account a, .help a {
+    text-decoration: none;
+    color: #01C09B;
+    font-size: 1rem;
+}
+
+.marketplace.active {
+    background-color: #01C09B;
+}
+
+.marketplace.active a {
+    color: #ffffff;
+}
+
+.help {
+    margin-top: 70%;
+    margin-bottom: 0;
+    border-top: 1px solid #00000026;
+    border-radius: 0;
+}
+
+/* ////// MAIN SECTION //////  */
+.main-page {
+    margin-left: 18.5rem;
+}
+
