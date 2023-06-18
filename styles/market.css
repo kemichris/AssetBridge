@@ -136,8 +136,9 @@ main {
 
 
 /* market place content  */
-.marketplace-content, .property-info {
+.marketplace-content, .property-info, .create-token-container {
     padding: 2rem 3rem;
+    background-color: #F2FAFF;
 }
 
 .marketplace-content h1, .marketplace-content h2 {
@@ -273,3 +274,102 @@ main {
     color: #ffffff;
     cursor: pointer;
 }
+
+/* ////// SECTION FOR CREAT NEW TOKEN //////  */
+.create-token-container {
+    height: 100%;
+}
+
+.marketplace img.active {
+    filter: invert(100%);
+}
+
+.create-token-container h1 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* asset selection */
+.form-sections {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-sections div {
+    cursor: pointer;
+}
+
+.form-sections h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: #6E7172;
+}
+
+.form-sections p {
+    color: #ABB0B3;
+    margin: 0.5rem 0 0;
+    font-size: 0.75rem;
+}
+
+.form-sections h3.active {
+    color: #000000;
+}
+
+.form-sections p.active {
+    color: #707375;
+}
+
+.asset-selection-form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.asset-selection-form span {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.asset-selection-form input, .asset-selection-form select, .asset-selection-form textarea {
+    margin-bottom: 2rem;
+    height: 3rem;
+    border: 1px solid #0000001F;
+    font-size: 1rem;
+    padding-left: 0.8rem;
+    background-color: #00000008;
+    font-family: 'Galano Grotesque Alt', sans-serif;
+    color: #707375;
+    border-radius: 0.5rem;
+}
+
+
+.asset-selection-form input::placeholder {
+    color: #8E8F94;
+}
+
+.asset-selection-form input:focus, .asset-selection-form select:focus, .asset-selection-form textarea {
+    outline: none;
+}
+
+.asset-selection-form textarea {
+    height: 8rem;
+    padding-top: 0.8rem;
+}
+
+.next-btn {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 2px solid #0000001F;
+    font-family: 'Galano Grotesque Alt', sans-serif;
+    color: #CBD5D7;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Proof of ownership */
