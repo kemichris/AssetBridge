@@ -90,6 +90,7 @@ main {
 .main-page {
     margin-left: 17.6rem;
     width: 100%;
+    padding-bottom: 3rem;
 }
 
 /* top bar  */
@@ -114,7 +115,12 @@ main {
 }
 
 .top-bar input::placeholder {
-    color: #7F7F7F;
+    color: #01C09B;
+}
+
+.top-bar input:focus {
+    outline: none;
+    color: #01C09B;
 }
 
 .top-bar button {
@@ -134,18 +140,57 @@ main {
     padding: 2rem 3rem;
 }
 
-.marketplace-content h1 {
+.marketplace-content h1, .marketplace-content h2 {
     font-size: 2rem;
     margin-top: 0;
 }
 
-.market-items {
+.marketplace-content h2 {
+    margin-top: 5rem;
+}
+
+.market-items, .most-green {
     display: flex;
     gap: 1.5rem;
 }
 
-.item {
+.item, .most-green-item {
     padding: 0.6rem;
     border: 0.95px solid #00000026;
     border-radius: 0.5rem
+}
+
+.owner-and-veriry {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.owner-and-veriry small {
+    color: #01C09B;
+}
+
+.item-name {
+    font-size: 1.1875rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.item-price {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.item-price p {
+    font-size: 1.275rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.item-price p .price-figure {
+    font-size: 0.5938rem;
+    font-weight: 400;
+    color: #01C09B;
 }
