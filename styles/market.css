@@ -136,7 +136,7 @@ main {
 
 
 /* market place content  */
-.marketplace-content {
+.marketplace-content, .property-info {
     padding: 2rem 3rem;
 }
 
@@ -158,6 +158,10 @@ main {
     padding: 0.6rem;
     border: 0.95px solid #00000026;
     border-radius: 0.5rem
+}
+
+.asset-image {
+    width: 100%;
 }
 
 .owner-and-veriry {
@@ -193,4 +197,79 @@ main {
     font-size: 0.5938rem;
     font-weight: 400;
     color: #01C09B;
+}
+
+/* ////// PROPERTY INFO //////  */
+.property-info {
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.property-imgs {
+    width:100%;
+}
+
+.info-image {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.img-sections {
+    display: flex;
+    gap: 1rem;
+}
+
+.img-sections img {
+    width: 22%;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.img-sections img.active {
+    border: 4px solid #01C09B;
+}
+
+.property-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 0.3rem;
+}
+
+.property-text-info .owner-and-veriry small {
+    font-size: 1rem;
+}
+
+.property-text-info .item-price {
+    margin-top: 1rem;
+    margin-bottom: 0.3;
+}
+
+.property-text-info .item-price p {
+    color: #01C09B;
+    font-size: 2.5rem;
+}
+
+.property-text-info .item-price p .price-figure {
+    font-size: 1rem;
+}
+
+.property-details {
+    font-size: 1rem;
+    color: #01C09B;
+    margin-top: 0;
+}
+
+.property-text-info button {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    font-family: 'Galano Grotesque Alt', sans-serif;
+    background-color: #01C09B;
+    border: 2px solid #01C09B;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
 }
