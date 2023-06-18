@@ -320,19 +320,19 @@ main {
     color: #707375;
 }
 
-.asset-selection-form {
+.asset-selection-form, .proof-form {
     display: flex;
     flex-direction: column;
     width: 70%;
 }
 
-.asset-selection-form span {
+.asset-selection-form span, .proof-form span {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-.asset-selection-form input, .asset-selection-form select, .asset-selection-form textarea {
+.asset-selection-form input, .asset-selection-form select, .asset-selection-form textarea, .proof-form input {
     margin-bottom: 2rem;
     height: 3rem;
     border: 1px solid #0000001F;
@@ -373,3 +373,53 @@ main {
 }
 
 /* Proof of ownership */
+.input-file {
+    display: none;
+}
+
+.proof-form label {
+    margin-bottom: 2rem;
+    height: 8rem;
+    border: 1px solid #0000001F;
+    padding: 0.8rem;
+    background-color: #00000008;
+    font-family: 'Galano Grotesque Alt', sans-serif;
+    border-radius: 0.5rem;
+}
+
+.proof-form label div {
+    border: 1px dashed #0000001F;
+    border-radius: 0.5rem;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag-file {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #8E8F94;
+    width: 40%;
+    text-align: center;
+}
+
+.browse-file {
+    color: #0199FA;
+    margin: 0;
+    font-size: 0.75rem;
+    text-decoration: underline;
+}
+
+.proof-form button {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 2px solid #0000001F;
+    font-family: 'Galano Grotesque Alt', sans-serif;
+    color: #CBD5D7;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

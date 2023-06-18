@@ -56,8 +56,8 @@
                 </div>
                 <div class="form-sections">
                     <div class="asset-select">
-                        <h3>Asset selection</h3>
-                        <p>More info about your asset</p>
+                        <h3 class="active">Asset selection</h3>
+                        <p class="active">More info about your asset</p>
                     </div>
                     <div class="proof">
                         <h3 class="active">Proof of ownership</h3>
@@ -73,12 +73,21 @@
                     </div>
                 </div>
 
-                <form class="asset-selection-form" action="">
+                <form class="proof-form" action="">
                     <span>Document type</span>
                     <input type="text" placeholder="Input name" id="">
                     <span>Select document</span>
-                    <input type="file" name="" id="">
-                    <a href=""><button type="submit">Next</button></a>
+                    <input class="input-file" type="file" multiple id="select-file">
+                    <label for="select-file">
+                        <div class="select-file-content">
+                            <p class="drag-file">Drag or paste your file here. DOCX, PDF, JPG, 
+                              XLSX allowed. Max size 5mb
+                            </p>
+                            <p class="browse-file">Browse</p>
+                        </div>
+                    </label>
+                    <button>Upload</button>
+                    <!-- <a href=""></a> -->
                 </form>
             </div>
 
