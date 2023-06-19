@@ -52,8 +52,8 @@ function createNewFile() {
         deleteFile.classList.add("del-file");
         createdFile.appendChild(deleteFile);
 
+        // Deleting selected files
         deleteFile.addEventListener("click", ()=> {
-            // Remove the corresponding created file element
             fileContainer.removeChild(createdFile);
           });
     }
@@ -61,59 +61,7 @@ function createNewFile() {
 }
 
 
-////////// DELETING FILES ///////////
-const delFileBtn = document.querySelectorAll(".del-file");
-const createdfileEl = document.querySelectorAll(".created-file");
-
-// delFileBtn[0].addEventListener("click", ()=>{
-//     createdfileEl[0].remove;
-// })
-
-
-// delFileBtn.forEach((delFileBtns)=>{
-//     delFileBtns.addEventListener("click", ()=>{
-//         for (let i = 0; i < createdfileEl.length; i++) {
-//             Array.from(delFileBtn).forEach((div, index)=>{
-//                  if (div = createdfileEl[i]) {
-//                         createdfileEl[i].remove;
-//                 }
-//             });
-//         }
-//     })
-// })
+////////// TOKEN DETAILS SECTION ///////////
 
 
 
-
-
-
-
-
-/*function createNewFile() {
-    const fileName = fileValue.files[0];
-    if (fileName) {
-        const fileInput = fileName.name
-        const createdFile = document.createElement("div");
-        createdFile.classList.add("created-file");
-        fileContainer.appendChild(createdFile);
-
-        const fileImageName = document.createElement("div");
-        fileImageName.classList.add("file-image-name")
-        createdFile.appendChild(fileImageName);
-
-        const fileImage = document.createElement("img");
-        fileImage.setAttribute("src", "assets/icons/file-icon.png");
-        fileImageName.appendChild(fileImage);
-
-        const fileP = document.createElement("p")
-        fileP.innerHTML = fileInput;
-        fileImageName.appendChild(fileP);
-
-        const deleteFile = document.createElement("img");
-        deleteFile.setAttribute("src", "assets/icons/delete-icon.png");
-        deleteFile.classList.add("del-file");
-        createdFile.appendChild(deleteFile);
-    } else {
-        alert("No file selected")
-    }
-}*/

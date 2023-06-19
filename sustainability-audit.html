@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Token | Proof of Ownership</title>
+    <title>Create Token | Sustainability Audit</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/market.css">
 
@@ -55,8 +55,8 @@
                 <div class="number-sections">
                     <p class="active">1</p>
                     <p class="active">2</p>
-                    <p>3</p>
-                    <p>4</p>
+                    <p class="active">3</p>
+                    <p class="active">4</p>
                 </div>
                 <div class="form-sections">
                     <div class="asset-select">
@@ -68,54 +68,51 @@
                         <p class="active">Upload required documents</p>
                     </div>
                     <div class="token-details">
-                        <h3>Token details</h3>
-                        <p>Upload required documents</p>
+                        <h3 class="active">Token details</h3>
+                        <p class="active">Upload required documents</p>
                     </div>
                     <div class="audit">
-                        <h3>Sustainability audit</h3>
-                        <p>Let's get to know how sustainable the asset is</p>
+                        <h3 class="active">Sustainability audit</h3>
+                        <p class="active">Let's get to know how sustainable the asset is</p>
                     </div>
                 </div>
 
-                <form class="proof-form" action="">
-                    <span>Document type</span>
-                    <input type="text" placeholder="Input name" id="">
-                    <div class="display-file">
-                        <!-- <div class="created-file">
-                            <div class="file-image-name">
-                                <img src="assets/icons/file-icon.png" alt="">
-                                <p>certificateofownersipOxford.pdf</p>
-                            </div>
-                            <img class="del-file" src="assets/icons/delete-icon.png" alt="">
-                        </div> -->
-                    </div>
-                    <span class="select-span">Select document</span>
-                    <input class="input-file" type="file" multiple id="select-file">
-                    <label class="label-file" id="label-file" for="select-file">
-                        <div class="select-file-content">
-                            <p class="drag-file">Drag or paste your file here. DOCX, PDF, JPG, 
-                              XLSX allowed. Max size 5mb
-                            </p>
-                            <p class="browse-file">Browse</p>
-                        </div>
-                    </label>
+                <form class="sustainability-form" action="">
+                    <span>What branch of sustainability</span>
+                    <select name="" id="select-value">
+                        <option disabled selected value="">Select branch</option>
+                        <option value="Clean energy">Clean energy</option>
+                        <option value="Real estate">Real estate</option>
+                    </select>
+                    <small>We would conduct a market valuation of your asset</small>
+
+                    <span class="how-does">How does your asset promote affordable and clean energy solutions</span>
+                    <textarea name="" id="" placeholder="My asset..."></textarea>
+                    <small>Use links where necessary</small>
+
+                    <span class="example">Examples of positive impacts your asset has made towards clean energy</span>
+                    <textarea id="" placeholder="My asset..."></textarea>
+                    <small>Use links where necessary</small>
+
                     
-                    <a class="proof-next-btn active" href="token-detail.html">Next</a>
+                    <a class="token-detail-btn" href="sustainability-audit.html">Next</a>
                 </form>
-                <button class="upload-btn" id="upload-file">Upload</button>
-                <div class="add-new-doc-container">
-                    <label class="add-new-doc active" for="select-file">
-                        <i class="fa-solid fa-plus"></i>
-                        <p>Add new document</p>
-                    </label>
-                    <button class="upload-new-doc active" id="">Upload</button>
-                </div>
-                
-            </div>
-
-            
+            </div> 
         </div>
     </main>
-    <script src="scripts/create-token.js"></script>
+    <script>
+        const selectValue = document.getElementById("select-value");
+        const howDoesSpan = document.querySelector(".how-does");
+        const example = document.querySelector(".example");
+
+        selectValue.addEventListener("change", ()=> {
+            let selectedOption = selectValue.options[selectValue.selectedIndex];
+            let selectedValue = selectedOption.value
+            
+            howDoesSpan.innerHTML = `How does your asset promote affordable and ${selectedValue} solutions`;
+            example.innerHTML = `Examples of positive impacts your asset has made towards ${selectedValue}`;
+        })
+        
+    </script>
 </body>
 </html>
