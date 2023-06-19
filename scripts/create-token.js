@@ -6,8 +6,7 @@ const selectfileLabel = document.getElementById("label-file");
 const selectSpan = document.querySelector(".select-span");
 const ProofNextBtn = document.querySelector(".proof-next-btn");
 const addNewDoc = document.querySelector(".add-new-doc");
-
-
+const uploadNewDoc = document.querySelector(".upload-new-doc");
 
 
 uploadFileBtn.addEventListener("click", ()=>{
@@ -17,8 +16,11 @@ uploadFileBtn.addEventListener("click", ()=>{
     selectSpan.classList.add("active");
     ProofNextBtn.classList.remove("active");
     addNewDoc.classList.remove("active");
+    uploadNewDoc.classList.remove("active")
 
 });
+
+uploadNewDoc.addEventListener("click", createNewFile);
 
 
 
@@ -64,9 +66,9 @@ function createNewFile() {
 const delFileBtn = document.querySelectorAll(".del-file");
 const createdfileEl = document.querySelectorAll(".created-file");
 
-delFileBtn[0].addEventListener("click", ()=>{
-    createdfileEl[0].remove;
-})
+// delFileBtn[0].addEventListener("click", ()=>{
+//     createdfileEl[0].remove;
+// })
 
 
 // delFileBtn.forEach((delFileBtns)=>{
@@ -87,3 +89,32 @@ delFileBtn[0].addEventListener("click", ()=>{
 
 
 
+
+/*function createNewFile() {
+    const fileName = fileValue.files[0];
+    if (fileName) {
+        const fileInput = fileName.name
+        const createdFile = document.createElement("div");
+        createdFile.classList.add("created-file");
+        fileContainer.appendChild(createdFile);
+
+        const fileImageName = document.createElement("div");
+        fileImageName.classList.add("file-image-name")
+        createdFile.appendChild(fileImageName);
+
+        const fileImage = document.createElement("img");
+        fileImage.setAttribute("src", "assets/icons/file-icon.png");
+        fileImageName.appendChild(fileImage);
+
+        const fileP = document.createElement("p")
+        fileP.innerHTML = fileInput;
+        fileImageName.appendChild(fileP);
+
+        const deleteFile = document.createElement("img");
+        deleteFile.setAttribute("src", "assets/icons/delete-icon.png");
+        deleteFile.classList.add("del-file");
+        createdFile.appendChild(deleteFile);
+    } else {
+        alert("No file selected")
+    }
+}*/

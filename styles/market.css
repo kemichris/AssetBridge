@@ -380,7 +380,7 @@ hr {
     color: #8E8F94;
 }
 
-.asset-selection-form input:focus, .asset-selection-form select:focus, .asset-selection-form textarea {
+.asset-selection-form input:focus, .asset-selection-form select:focus, .asset-selection-form textarea, .proof-form input {
     outline: none;
 }
 
@@ -485,7 +485,14 @@ hr {
     cursor: pointer;
 }
 
-.add-new-doc {
+.add-new-doc-container {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.add-new-doc, .upload-new-doc {
     font-size: 1rem;
     padding: 0.5rem 0.7rem;
     font-family: 'Galano Grotesque Alt', sans-serif;
@@ -493,15 +500,28 @@ hr {
     border: 2px dashed #CBD5D7;
     border-radius: 0.5rem;
     background-color: transparent;
-    margin-left: 23%;
+    width: fit-content;
     margin-top: 2rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upload-new-doc {
+    border: 1px solid #CBD5D7;
+    padding: 0.5rem 1.5rem;
+}
+
+
+.add-new-doc p {
+    margin: 0;
 }
 
 .proof-next-btn {
     margin-top: 2rem;
 }
 
-.proof-next-btn.active, .add-new-doc.active,.upload-btn.active, .label-file.active, .select-span.active {
+.proof-next-btn.active, .add-new-doc.active,.upload-btn.active, .label-file.active, .select-span.active, .upload-new-doc.active {
     display: none;
 }

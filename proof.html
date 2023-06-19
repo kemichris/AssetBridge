@@ -81,13 +81,13 @@
                     <span>Document type</span>
                     <input type="text" placeholder="Input name" id="">
                     <div class="display-file">
-                        <div class="created-file">
+                        <!-- <div class="created-file">
                             <div class="file-image-name">
                                 <img src="assets/icons/file-icon.png" alt="">
                                 <p>certificateofownersipOxford.pdf</p>
                             </div>
                             <img class="del-file" src="assets/icons/delete-icon.png" alt="">
-                        </div>
+                        </div> -->
                     </div>
                     <span class="select-span">Select document</span>
                     <input class="input-file" type="file" id="select-file">
@@ -103,7 +103,14 @@
                     <a class="proof-next-btn active" href="">Next</a>
                 </form>
                 <button class="upload-btn" id="upload-file">Upload</button>
-                <button class="add-new-doc active"><i class="fa-solid fa-plus"></i> Add new document</button>
+                <div class="add-new-doc-container">
+                    <label class="add-new-doc active" for="select-file">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Add new document</p>
+                    </label>
+                    <button class="upload-new-doc active" id="">Upload</button>
+                </div>
+                
             </div>
 
             
