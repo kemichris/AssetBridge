@@ -51,8 +51,12 @@
             <!-- create new token  -->
             <div class="create-token-container">
                 <h1>Create token</h1>
+                <hr>
                 <div class="number-sections">
-
+                    <p class="active">1</p>
+                    <p class="active">2</p>
+                    <p>3</p>
+                    <p>4</p>
                 </div>
                 <div class="form-sections">
                     <div class="asset-select">
@@ -76,9 +80,18 @@
                 <form class="proof-form" action="">
                     <span>Document type</span>
                     <input type="text" placeholder="Input name" id="">
-                    <span>Select document</span>
-                    <input class="input-file" type="file" multiple id="select-file">
-                    <label for="select-file">
+                    <div class="display-file">
+                        <div class="created-file">
+                            <div class="file-image-name">
+                                <img src="assets/icons/file-icon.png" alt="">
+                                <p>certificateofownersipOxford.pdf</p>
+                            </div>
+                            <img class="del-file" src="assets/icons/delete-icon.png" alt="">
+                        </div>
+                    </div>
+                    <span class="select-span">Select document</span>
+                    <input class="input-file" type="file" id="select-file">
+                    <label class="label-file" id="label-file" for="select-file">
                         <div class="select-file-content">
                             <p class="drag-file">Drag or paste your file here. DOCX, PDF, JPG, 
                               XLSX allowed. Max size 5mb
@@ -86,14 +99,16 @@
                             <p class="browse-file">Browse</p>
                         </div>
                     </label>
-                    <button>Upload</button>
-                    <!-- <a href=""></a> -->
+                    
+                    <a class="proof-next-btn active" href="">Next</a>
                 </form>
+                <button class="upload-btn" id="upload-file">Upload</button>
+                <button class="add-new-doc active"><i class="fa-solid fa-plus"></i> Add new document</button>
             </div>
 
             
         </div>
     </main>
-    
+    <script src="scripts/create-token.js"></script>
 </body>
 </html>

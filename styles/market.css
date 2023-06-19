@@ -287,6 +287,36 @@ main {
 .create-token-container h1 {
     font-size: 2rem;
     margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+hr {
+    width: 61%;
+    margin: 0;
+    border: 1px solid #D0D6D8;
+}
+
+.number-sections {
+    display: flex;
+    align-items: center;
+    gap: 12%;
+    position: absolute;
+    width: 100%;
+    top: 12.5rem;
+}
+
+.number-sections p {
+    padding: 0.3rem 0.8rem;
+    margin: 0;
+    background-color: #D0D5D9;
+    border-radius: 100%;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.number-sections p.active {
+    background-color: #01C09B;
+    box-shadow: 0 0 4px 4px rgba(163, 143, 143, 0.3);
 }
 
 /* asset selection */
@@ -294,6 +324,7 @@ main {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .form-sections div {
@@ -358,7 +389,7 @@ main {
     padding-top: 0.8rem;
 }
 
-.next-btn {
+.next-btn, .proof-next-btn {
     width: 100%;
     padding: 0.5rem 0;
     font-size: 1.5rem;
@@ -412,8 +443,38 @@ main {
     text-decoration: underline;
 }
 
-.proof-form button {
-    width: 100%;
+.display-file div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.display-file .created-file {
+    justify-content: space-between;
+}
+
+.display-file {
+    /* margin-bottom: 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.display-file div p {
+    margin: 0;
+    color: #0000008C;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.created-file img:last-child {
+    cursor: pointer;
+}
+
+.upload-btn {
+    width: 70%;
     padding: 0.5rem 0;
     font-size: 1.5rem;
     background-color: transparent;
@@ -422,4 +483,25 @@ main {
     color: #CBD5D7;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+
+.add-new-doc {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    font-family: 'Galano Grotesque Alt', sans-serif;
+    color: #CBD5D7;
+    border: 2px dashed #CBD5D7;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    margin-left: 23%;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.proof-next-btn {
+    margin-top: 2rem;
+}
+
+.proof-next-btn.active, .add-new-doc.active,.upload-btn.active, .label-file.active, .select-span.active {
+    display: none;
 }
