@@ -23,41 +23,40 @@ uploadFileBtn.addEventListener("click", ()=>{
 uploadNewDoc.addEventListener("click", createNewFile);
 
 
-
-// if (fileContainer.lenght >= 1) {
-//     uploadFileBtn.classList.add("active");
-//     selectfileLabel.classList.add("active")
-    
-// }
-
-
-
-
-
 // function to create the file display container
 function createNewFile() {
-    const fileName = fileValue.files[0].name;
+    const fileNames = fileValue.files;
 
-    const createdFile = document.createElement("div");
-    createdFile.classList.add("created-file");
-    fileContainer.appendChild(createdFile);
+    for (let i = 0; i < fileNames.length; i++) {
+        
+        const file = fileNames[i];
+        const fileName= file.name;
+        const createdFile = document.createElement("div");
+        createdFile.classList.add("created-file");
+        fileContainer.appendChild(createdFile);
 
-    const fileImageName = document.createElement("div");
-    fileImageName.classList.add("file-image-name")
-    createdFile.appendChild(fileImageName);
+        const fileImageName = document.createElement("div");
+        fileImageName.classList.add("file-image-name")
+        createdFile.appendChild(fileImageName);
 
-    const fileImage = document.createElement("img");
-    fileImage.setAttribute("src", "assets/icons/file-icon.png");
-    fileImageName.appendChild(fileImage);
+        const fileImage = document.createElement("img");
+        fileImage.setAttribute("src", "assets/icons/file-icon.png");
+        fileImageName.appendChild(fileImage);
 
-    const fileP = document.createElement("p")
-    fileP.innerHTML = fileName;
-    fileImageName.appendChild(fileP);
+        const fileP = document.createElement("p")
+        fileP.innerHTML = fileName;
+        fileImageName.appendChild(fileP);
 
-    const deleteFile = document.createElement("img");
-    deleteFile.setAttribute("src", "assets/icons/delete-icon.png");
-    deleteFile.classList.add("del-file");
-    createdFile.appendChild(deleteFile);
+        const deleteFile = document.createElement("img");
+        deleteFile.setAttribute("src", "assets/icons/delete-icon.png");
+        deleteFile.classList.add("del-file");
+        createdFile.appendChild(deleteFile);
+
+        deleteFile.addEventListener("click", ()=> {
+            // Remove the corresponding created file element
+            fileContainer.removeChild(createdFile);
+          });
+    }
     
 }
 
