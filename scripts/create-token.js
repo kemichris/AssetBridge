@@ -7,7 +7,17 @@ const selectSpan = document.querySelector(".select-span");
 const ProofNextBtn = document.querySelector(".proof-next-btn");
 const addNewDoc = document.querySelector(".add-new-doc");
 const uploadNewDoc = document.querySelector(".upload-new-doc");
+const dropArea = document.getElementById("label-file");
 
+
+// Add event listeners for dragover, dragleave, and drop events
+dropArea.addEventListener('dragover', handleDragOver);
+dropArea.addEventListener('dragleave', handleDragLeave);
+dropArea.addEventListener('drop', handleDrop);
+
+addNewDoc.addEventListener('dragover', handleDragOver);
+addNewDoc.addEventListener('dragleave', handleDragLeave);
+addNewDoc.addEventListener('drop', handleDrop);
 
 uploadFileBtn.addEventListener("click", ()=>{
     createNewFile()
@@ -21,6 +31,10 @@ uploadFileBtn.addEventListener("click", ()=>{
 });
 
 uploadNewDoc.addEventListener("click", createNewFile);
+
+// Add event listeners for dragover and drop events
+fileValue.addEventListener('dragover', handleDragOver);
+fileValue.addEventListener('drop', handleDrop);
 
 
 // function to create the file display container
@@ -60,8 +74,39 @@ function createNewFile() {
     
 }
 
+// Function to handle the dragover event
+function handleDragOver(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    dropArea.classList.add('dragover');
+    addNewDoc.classList.add("dragover");
+}
 
-////////// TOKEN DETAILS SECTION ///////////
+// Function to handle the dragleave event
+function handleDragLeave(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    dropArea.classList.remove('dragover');
+    addNewDoc.classList.add("dragover");
+}
+
+  // Function to handle the drop event
+function handleDrop(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    dropArea.classList.remove('dragover');
+    addNewDoc.classList.add("dragover");
+    
+    // Get the files from the event
+    const files = event.dataTransfer.files;
+    
+    // Assign the files to the file input
+    fileValue.files = files;
+}
+
+
+
+  
 
 
 

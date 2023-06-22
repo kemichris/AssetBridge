@@ -290,19 +290,9 @@ main {
     margin-bottom: 3rem;
 }
 
-hr {
-    width: 61%;
-    margin: 0;
-    border: 1px solid #D0D6D8;
-}
-
 .number-sections {
     display: flex;
     align-items: center;
-    gap: 12%;
-    position: absolute;
-    width: 100%;
-    top: 12.5rem;
 }
 
 .number-sections p {
@@ -314,9 +304,19 @@ hr {
     cursor: pointer;
 }
 
+.number-sections hr {
+    width: 10rem;
+    margin: 0;
+    border: 2px solid #D0D5D9;
+}
+
 .number-sections p.active {
     background-color: #01C09B;
     box-shadow: 0 0 4px 4px rgba(163, 143, 143, 0.3);
+}
+
+.number-sections hr.active {
+    border: 2px solid #01C09B;
 }
 
 /* asset selection */
@@ -324,7 +324,7 @@ hr {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .form-sections div {
@@ -454,7 +454,6 @@ hr {
 }
 
 .display-file {
-    /* margin-bottom: 2rem; */
     display: flex;
     flex-direction: column;
     gap: 1rem;

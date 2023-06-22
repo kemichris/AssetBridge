@@ -132,9 +132,9 @@ h1 {
 }
 
 .how-it-works-content {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center;
     background-color: #01B08E;
     opacity: .8;
     padding: 3rem 0;
@@ -145,6 +145,44 @@ h1 {
     color: #FFFFFF;
     margin: 0 0 1rem;
     text-align: center;
+}
+
+.how-numbering-text {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.how-text {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: left;
+    margin: 2rem 0 0;
+}
+
+.numbering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numbering p {
+    margin: 0;
+    padding: 0.5rem 0.9rem;
+    background-color: #018067;
+    border-radius: 100%;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+}
+
+.numbering hr {
+    height: 6rem;
+    width: 0;
+    margin: 0;
+    border: 2px solid #018067;
 }
 
 .how-it-works-content ol li {
