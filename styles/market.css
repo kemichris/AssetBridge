@@ -295,6 +295,10 @@ main {
     align-items: center;
 }
 
+.number-sections a {
+    text-decoration: none;
+}
+
 .number-sections p {
     padding: 0.3rem 0.8rem;
     margin: 0;
@@ -364,8 +368,9 @@ main {
 }
 
 .asset-selection-form input, .asset-selection-form select, .asset-selection-form textarea, .proof-form input {
-    margin-bottom: 2rem;
+    
     height: 3rem;
+    margin-bottom: 2rem;
     border: 1px solid #0000001F;
     font-size: 1rem;
     padding-left: 0.8rem;
@@ -373,6 +378,14 @@ main {
     font-family: 'Galano Grotesque Alt', sans-serif;
     color: #707375;
     border-radius: 0.5rem;
+}
+
+.asset-selection-form small, .proof-form small, .token-price-alert, .fractions-alert, .branch-alert, .how-alert, .example-alert {
+    color: red;
+}
+
+.asset-selection-form small.inactive, .proof-form small.inactive, .token-price-alert.inactive, .fractions-alert.inactive, .branch-alert.inactive, .how-alert.inactive, .example-alert.inactive {
+    display: none;
 }
 
 
@@ -542,7 +555,7 @@ main {
     outline: none;
 }
 
-.token-detail-form small, .how-many-fractions small, .sustainability-form small {
+.token-small, .how-many-fractions .each-fraction, .sustainability-form .small {
     margin-top: 0.2rem;
     margin-bottom: 2rem;
     color: #0000008C;

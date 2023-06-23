@@ -56,11 +56,11 @@
             <div class="create-token-container">
                 <h1>Create token</h1>
                 <div class="number-sections">
-                    <p class="active">1</p>
+                    <a href="create-token.html"><p class="active">1</p></a>
                     <hr class="active">
-                    <p class="active">2</p>
+                    <a class="page-2-next" href="proof.html"><p class="active">2</p></a>
                     <hr>
-                    <p>3</p>
+                    <a class="page-3-next" href="token-detail.html"><p>3</p></a>
                     <hr>
                     <p>4</p>
                 </div>
@@ -85,7 +85,8 @@
 
                 <form class="proof-form" action="">
                     <span>Document type</span>
-                    <input type="text" placeholder="Input name" id="">
+                    <small class="doc-type-alert inactive">*Doc type required*</small>
+                    <input type="text" placeholder="Input name" autocomplete="off" id="doc-type">
                     <div class="display-file">
                         <!-- <div class="created-file">
                             <div class="file-image-name">
@@ -96,6 +97,8 @@
                         </div> -->
                     </div>
                     <span class="select-span">Select document</span>
+                    <small class="doc-alert inactive">*Doc required*</small>
+                    <small class="doc-upload-alert inactive">*No file selected*</small>
                     <input class="input-file" type="file" multiple id="select-file">
                     <label class="label-file" id="label-file" for="select-file">
                         <div class="select-file-content">
@@ -122,6 +125,6 @@
             
         </div>
     </main>
-    <script src="scripts/create-token.js"></script>
+    <script src="scripts/proof.js"></script>
 </body>
 </html>

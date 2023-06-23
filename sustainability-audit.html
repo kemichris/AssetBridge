@@ -56,13 +56,13 @@
             <div class="create-token-container">
                 <h1>Create token</h1>
                 <div class="number-sections">
-                    <p class="active">1</p>
+                    <a href="create-token.html"><p class="active">1</p></a>
                     <hr class="active">
-                    <p class="active">2</p>
+                    <a class="page-2-next" href="proof.html"><p class="active">2</p></a>
                     <hr class="active">
-                    <p class="active">3</p>
+                    <a class="page-3-next" href="token-detail.html"><p class="active">3</p></a>
                     <hr class="active">
-                    <p class="active">4</p>
+                    <a class="page-4-next" href="sustainability-audit.html"><p class="active">4</p></a>
                 </div>
                 <div class="form-sections">
                     <div class="asset-select">
@@ -85,40 +85,30 @@
 
                 <form class="sustainability-form" action="">
                     <span>What branch of sustainability</span>
-                    <select name="" id="select-value">
+                    <small class="branch-alert inactive">*make a selection*</small>
+                    <select name="" id="select-branch">
                         <option disabled selected value="">Select branch</option>
                         <option value="Clean energy">Clean energy</option>
                         <option value="Real estate">Real estate</option>
                     </select>
-                    <small>We would conduct a market valuation of your asset</small>
+                    <small class="small">We would conduct a market valuation of your asset</small>
 
-                    <span class="how-does">How does your asset promote affordable and clean energy solutions</span>
-                    <textarea name="" id="" placeholder="My asset..."></textarea>
-                    <small>Use links where necessary</small>
+                    <span class="how-does">How does your asset promote affordable and...</span>
+                    <small class="how-alert inactive">*field cannot be blank*</small>
+                    <textarea name="" id="how-text" placeholder="My asset..."></textarea>
+                    <small class="small">Use links where necessary</small>
 
-                    <span class="example">Examples of positive impacts your asset has made towards clean energy</span>
-                    <textarea id="" placeholder="My asset..."></textarea>
-                    <small>Use links where necessary</small>
+                    <span class="example">Examples of positive impacts your asset has made towards...</span>
+                    <small class="example-alert inactive">*field cannot be blank*</small>
+                    <textarea id="example-text" placeholder="My asset..."></textarea>
+                    <small class="small">Use links where necessary</small>
 
                     
-                    <a class="token-detail-btn" href="sustainability-audit.html">Next</a>
+                    <a class="sustainability-btn" href="">Next</a>
                 </form>
             </div> 
         </div>
     </main>
-    <script>
-        const selectValue = document.getElementById("select-value");
-        const howDoesSpan = document.querySelector(".how-does");
-        const example = document.querySelector(".example");
-
-        selectValue.addEventListener("change", ()=> {
-            let selectedOption = selectValue.options[selectValue.selectedIndex];
-            let selectedValue = selectedOption.value
-            
-            howDoesSpan.innerHTML = `How does your asset promote affordable and ${selectedValue} solutions`;
-            example.innerHTML = `Examples of positive impacts your asset has made towards ${selectedValue}`;
-        })
-        
-    </script>
+    <script src="scripts/sustainability-audit.js"></script>
 </body>
 </html>

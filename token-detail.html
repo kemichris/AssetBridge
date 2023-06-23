@@ -56,13 +56,13 @@
             <div class="create-token-container">
                 <h1>Create token</h1>
                 <div class="number-sections">
-                    <p class="active">1</p>
+                    <a href="create-token.html"><p class="active">1</p></a>
                     <hr class="active">
-                    <p class="active">2</p>
+                    <a class="page-2-next" href="proof.html"><p class="active">2</p></a>
                     <hr class="active">
-                    <p class="active">3</p>
+                    <a class="page-3-next" href="token-detail.html"><p class="active">3</p></a>
                     <hr>
-                    <p>4</p>
+                    <a class="page-4-next" href="sustainability-audit.html"><p>4</p></a>
                 </div>
                 <div class="form-sections">
                     <div class="asset-select">
@@ -85,18 +85,20 @@
 
                 <form class="token-detail-form" action="">
                     <span>Initial token price</span>
-                    <input class="usdt-amount" type="number" placeholder="Enter amount in USDT" id="">
-                    <small>We would conduct a market valuation of your asset</small>
+                    <small class="token-price-alert inactive">*token price required*</small>
+                    <input class="usdt-amount" type="number" placeholder="Enter amount in USDT" id="token-price">
+                    <small class="token-small">We would conduct a market valuation of your asset</small>
 
                     <div class="is-it-fractional">
                         <span class="">Is it a fractional token?</span>
-                        <input class="checkbox-checked" type="checkbox" name="" id="">
+                        <input class="checkbox-checked" type="checkbox" name="" id="fraction-check">
                     </div>
 
                     <div class="how-many-fractions active">
                         <span>How many fractions</span>
-                        <input type="number" placeholder="Enter number of fractions" id="">
-                        <small>Each fraction costs 205 usdt</small>
+                        <small class="fractions-alert inactive">*fractions required*</small>
+                        <input type="number" placeholder="Enter number of fractions" id="no-fractions">
+                        <small class="each-fraction">Each fraction costs 205 usdt</small>
                     </div>
                     
                     <a class="token-detail-btn" href="sustainability-audit.html">Next</a>
@@ -106,24 +108,6 @@
             
         </div>
     </main>
-    <script src="scripts/create-token.js"></script>
-    <script>
-        const fractionalCheck = document.querySelector(".checkbox-checked");
-        const howManyFractions = document.querySelector(".how-many-fractions");
-
-        fractionalCheck.addEventListener("input", ()=>{
-            updateFraction()
-        })
-
-
-        function updateFraction() {
-            if (fractionalCheck.checked) {
-                howManyFractions.classList.remove("active")
-            } else {
-                howManyFractions.classList.add("active")
-            }
-    
-        }
-    </script>
+    <script src="scripts/token-details.js"></script>
 </body>
 </html>

@@ -56,9 +56,9 @@
             <div class="create-token-container">
                 <h1>Create token</h1>
                 <div class="number-sections">
-                    <p class="active">1</p>
+                    <a href="create-token.html"><p class="active">1</p></a>
                     <hr>
-                    <p>2</p>
+                    <a class="page-2-next" href="proof.html"><p>2</p></a>
                     <hr>
                     <p>3</p>
                     <hr>
@@ -85,14 +85,18 @@
 
                 <form class="asset-selection-form" action="">
                     <span>Asset name</span>
-                    <input type="text" placeholder="Input name" id="">
+                    <small class="asset-name-alert inactive">*Asset name required*</small>
+                    <input type="text" placeholder="Input name" autocomplete="off" id="asset-name">
+                    
                     <span>Asset type</span>
-                    <select name="" id="">
+                    <small class="asset-type-alert inactive">*No selection made*</small>
+                    <select name="" id="asset-type">
                         <option disabled selected value="">Pick an asset type</option>
                         <option value="real estate">Real estate</option>
                     </select>
                     <span>Description</span>
-                    <textarea placeholder="More about the token" id=""></textarea>
+                    <small class="description-alert inactive">*Field cannot be blank*</small>
+                    <textarea placeholder="More about the token" id="desc"></textarea>
                     <a class="next-btn" href="proof.html">Next</a>
                 </form>
             </div>
@@ -100,6 +104,6 @@
             
         </div>
     </main>
-    
+    <script src="scripts/create-token.js"></script>
 </body>
 </html>
