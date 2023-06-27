@@ -451,7 +451,6 @@ footer {
     
 }
 
-
 @media (max-width:860px) {
     /* ////// NAV BAR SECTION //////  */
     nav {
@@ -542,6 +541,10 @@ footer {
     }
 
     /* ////// WHY SECTION ////// */
+    .why-assetbridge {
+        margin: 8rem 3rem;
+    }
+
     .why-assetbridge h2 {
         font-size: 1.2rem;
     }
@@ -554,8 +557,12 @@ footer {
         font-size: 0.8rem;
     }
 
-     /* ////// SUBSCRIBE SECTION ////// */
-     .subscribe-section h2 {
+    /* ////// SUBSCRIBE SECTION ////// */
+    .subscribe-section {
+        padding: 3rem 3rem;
+    }
+
+    .subscribe-section h2 {
         font-size: 1.2rem;
     }
 
@@ -581,6 +588,10 @@ footer {
     }
 
     /* ////// FOOTER SECTION ////// */
+    footer {
+        padding: 3rem 3rem 1.5rem;
+    }
+
     .logo-side img {
         width: 4rem;
         height: 4rem;
@@ -601,5 +612,166 @@ footer {
     .docs-side h3, .community-side h3 {
         font-size: 1rem;
         margin: 1rem 0 0rem;
+    }
+}
+
+@media (max-width:700px) {
+    /* ////// FUNCTIONALITIES ////// */
+    .function-cards {
+        margin: 8rem 2rem;
+        gap: 1rem;
+    }
+
+    /* ////// HOW IT WORKS ////// */
+    .how-it-works {
+        margin: 0 2rem;
+    }
+
+    /* ////// WHY SECTION ////// */
+    .why-assetbridge {
+        margin: 8rem 2rem;
+    }
+
+    /* ////// SUBSCRIBE SECTION ////// */
+    .subscribe-section {
+        padding: 3rem 2rem;
+    }
+
+    /* ////// FOOTER SECTION ////// */
+    footer {
+        padding: 3rem 2rem 1.5rem;
+    }
+}
+
+@media (max-width:540px) {
+    /* ////// NAV BAR SECTION //////  */
+    nav {   
+        padding: 1rem 1.5rem;
+    }
+
+    nav ul {
+        padding-right: 3rem;
+    }
+
+    .other-nav-items button {
+        padding: 0.4rem 1rem;
+    }
+
+    /* ////// TOP CONTAINER ////// */
+    .top-container img, h1 {
+        width: 80%;
+    }
+
+    /* ////// HOW IT WORKS ////// */
+    .how-numbering-text {
+        gap: 1rem;
+    }
+
+    .how-text {
+        width: 70%;
+    }
+
+    /* ////// WHY SECTION ////// */
+    .why-assetbridge {
+        gap: 1.5rem;
+    }
+
+    /* ////// SUBSCRIBE SECTION ////// */
+    .subscribe-section p, .email-input {
+        width: 90%;
+    }
+
+    /* ////// FOOTER SECTION ////// */
+    .logo-side img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .logo-side p {
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width:500px) {
+    /* ////// NAV BAR SECTION //////  */
+    .logo-li img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .logo-li a {
+        font-size: 0.7rem;
+    }
+
+    .other-nav-items {
+        gap: 1rem;
+    }
+
+
+
+
+    /* ////// FUNCTIONALITIES ////// */
+    .function-cards {
+        flex-direction: column;
+        margin: 8rem 1.5rem;
+    }
+
+    .function-cards div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .function-cards p {
+        text-align: center;
+    }
+
+    /* ////// HOW IT WORKS ////// */
+    .how-it-works {
+        margin: 0 1.5rem;
+    }
+
+    /* ////// WHY SECTION ////// */
+    .why-assetbridge {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 8rem 1.5rem;
+    }
+
+    .why-assetbridge h2, .why-assetbridge h3, .why-assetbridge p {
+        text-align: center;
+    }
+
+    /* ////// SUBSCRIBE SECTION ////// */
+    .subscribe-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .email-input button {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    /* ////// FOOTER SECTION ////// */
+    footer {
+        padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .footer-sections {
+        flex-direction: column;
+    }
+
+    .logo-side img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .logo-side p {
+        font-size: 1.5rem;
+    }
+
+    .docs-side {
+        margin-right: 0;
     }
 }
