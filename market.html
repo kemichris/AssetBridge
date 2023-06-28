@@ -47,14 +47,35 @@
         <div class="main-page">
             <!-- top-bar  -->
             <div class="top-bar">
-                <input type="search" placeholder="Search a token, creator or asset" id="">
-                <button class="sign-up-btn">Connect wallet</button>
+                <div class="logo-mobile">
+                    <img src="assets/icons/assetbridge-logo.png" alt="">
+                    <a href="index.html">AssetBridge</a>
+                </div>
+                <i class="fa-solid fa-bars menu-button" id="open-nav"></i>
+                <i class="fa-solid fa-x close-menu-btn inactive" id="close-nav"></i>
+
+                <div class="search-connect">
+                    <input type="search" placeholder="Search a token, creator or asset" id="">
+                    <button class="sign-up-btn">Connect wallet</button>
+                </div>
             </div>
 
             <!-- market place content  -->
             <div class="marketplace-content">
                 <h1>New tokens</h1>
                 <div class="market-items">
+                    <div class="item">
+                        <img class="asset-image" src="assets/images/token-image.png" alt="">
+                        <div class="owner-and-veriry">
+                            <small>Jean Nouvel</small>
+                            <img src="assets/icons/verify-icon.png" alt="">
+                        </div>
+                        <p class="item-name">1sqm of One Central Park, Sydney</p>
+                        <div class="item-price">
+                            <img src="assets/icons/price-icon.png" alt="">
+                            <p>2.1 <span class="price-figure">(<span class="figure">3700</span> usdt)</span></p>
+                        </div>
+                    </div>
                     <div class="item">
                         <img class="asset-image" src="assets/images/token-image.png" alt="">
                         <div class="owner-and-veriry">
@@ -136,6 +157,6 @@
             </div>
         </div>
     </main>
-    
+    <script src="scripts/market.js"></script>
 </body>
 </html>
