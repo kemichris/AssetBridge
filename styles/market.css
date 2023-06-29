@@ -175,6 +175,10 @@ main {
     border-radius: 0.5rem
 }
 
+.marketplace-content a {
+    text-decoration: none;
+}
+
 .asset-image {
     width: 100%;
 }
@@ -193,6 +197,7 @@ main {
     font-size: 1.1875rem;
     font-weight: bold;
     margin-top: 0;
+    color: black;
 }
 
 .item-price {
@@ -206,6 +211,7 @@ main {
     font-size: 1.275rem;
     font-weight: bold;
     margin: 0;
+    color: black;
 }
 
 .item-price p .price-figure {
@@ -218,6 +224,7 @@ main {
 .property-info {
     display: flex;
     gap: 2rem;
+    height: 100%;
     
 }
 
@@ -614,6 +621,44 @@ main {
 
 /* /////////// MEDIA RESPONSIVENESS ////////// */
 
+@media (max-width:1120px) {
+    /* ////// PROPERTY INFO //////  */
+    .img-sections img {
+        width: 20%;
+
+    }
+
+    .img-sections img.active {
+        border: 2px solid #01C09B;
+    }
+
+    .property-name {
+        font-size: 1.5rem;
+    }
+
+    .property-text-info .owner-and-veriry small {
+        font-size: 0.8rem;
+    }
+
+    .property-text-info .item-price p {
+        font-size: 1.5rem;
+    }
+
+    .property-text-info .item-price p .price-figure {
+        font-size: 0.8rem;
+    }
+
+    .property-details {
+        font-size: 0.8rem;
+
+    }
+
+    .property-text-info button {
+        font-size: 1rem;
+        border: 1px solid #01C09B;
+    }
+}
+
 @media (max-width:1070px) {
     /* ////// SIDE BAR MENU //////  */
     .sidebar-menu {
@@ -782,7 +827,7 @@ main {
     }
 
     /* market place content  */
-    .marketplace-content, .create-token-container {
+    .marketplace-content, .property-info, .create-token-container  {
         padding-top: 7rem;
     }
 
@@ -795,7 +840,6 @@ main {
 
 @media (max-width:650px) {
     /* ////// MAIN SECTION //////  */
-
     /* top bar  */
     .top-bar {
         padding: 1rem 1.5rem;
@@ -813,6 +857,11 @@ main {
     /* market place content  */
     .market-items, .most-green {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ////// PROPERTY INFO //////  */
+    .property-info {
+        flex-direction: column;
     }
 
     /* ////// SECTION FOR CREAT NEW TOKEN //////  */
@@ -940,6 +989,15 @@ main {
 }
 
 @media (max-width:400px) {
+    /* ////// PROPERTY INFO //////  */
+    .property-name {
+        font-size: 1rem;
+    }
+
+    .property-text-info .item-price p {
+        font-size: 1rem;
+    }
+    
     /* ////// SECTION FOR CREAT NEW TOKEN //////  */
     .number-sections hr {
         width: 3.5rem;

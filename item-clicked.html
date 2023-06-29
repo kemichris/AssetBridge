@@ -47,8 +47,17 @@
         <div class="main-page">
             <!-- top-bar  -->
             <div class="top-bar">
-                <input type="search" placeholder="Search a token, creator or asset" id="">
-                <button class="sign-up-btn">Connect wallet</button>
+                <div class="logo-mobile">
+                    <img src="assets/icons/assetbridge-logo.png" alt="">
+                    <a href="index.html">AssetBridge</a>
+                </div>
+                <i class="fa-solid fa-bars menu-button" id="open-nav"></i>
+                <i class="fa-solid fa-x close-menu-btn inactive" id="close-nav"></i>
+
+                <div class="search-connect">
+                    <input type="search" placeholder="Search a token, creator or asset" id="">
+                    <button class="sign-up-btn">Connect wallet</button>
+                </div>
             </div>
 
             <!-- Item info  -->
@@ -83,6 +92,6 @@
             
         </div>
     </main>
-    
+    <script src="scripts/item-clicked.js"></script>
 </body>
 </html>
