@@ -833,6 +833,10 @@ main {
         width: 90%;
     }
 
+    .upload-btn {
+        width: 90%;
+    }
+
 
 }
 
@@ -850,7 +854,7 @@ main {
         font-size: 0.4rem;
     }
 
-    .asset-selection-form span {
+    .asset-selection-form span,.proof-form span, .token-detail-form span, .sustainability-form span {
         font-size: 0.8rem;
     }
 
@@ -866,6 +870,21 @@ main {
     .asset-selection-form small, .proof-form small, .token-price-alert, .fractions-alert, .branch-alert, .how-alert, .example-alert {
         font-size: 0.6rem;
     }
+
+    /* Proof of ownership */
+    .add-new-doc-container {
+        width: 100%;
+    }
+    
+    .add-new-doc, .upload-new-doc {
+        font-size: 0.8rem;
+    }
+
+    .token-detail-form .usdt-amount, .how-many-fractions input, .sustainability-form select, .sustainability-form textarea {
+        font-size: 0.8rem;
+        height: 2rem;
+    }
+
 }
 
 @media (max-width:500px) {
@@ -877,6 +896,10 @@ main {
 
     /* ////// SECTION FOR CREAT NEW TOKEN //////  */
     .asset-selection-form, .proof-form, .token-detail-form, .sustainability-form {
+        width: 100%;
+    }
+
+    .upload-btn {
         width: 100%;
     }
 
@@ -908,6 +931,10 @@ main {
     .number-sections hr {
         width: 4rem;
         border: 1px solid #D0D5D9;
+    }
+
+    .number-sections hr.active {
+        border: 1px solid #01C09B;
     }
     
 }

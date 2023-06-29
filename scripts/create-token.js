@@ -18,8 +18,6 @@ closeNav.addEventListener("click", ()=> {
 });
 
 
-
-
 /* ////// FORM VALIDATION ////// */
 // anchor tags 
 const nextBtn = document.querySelector(".next-btn");
