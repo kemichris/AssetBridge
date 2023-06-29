@@ -99,11 +99,9 @@ main {
     padding: 1.5rem 3rem;
     border-bottom: 2px solid #00000026;
     align-items: center;
-    /* justify-content: space-between; */
-
 }
 
-.menu-button {
+.menu-button, .close-menu-btn {
     display: none;
 }
 
@@ -644,6 +642,11 @@ main {
     .item-name {
         font-size: 1rem;
     }
+
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .number-sections hr {
+        width: 8rem;
+    }
 }
 
 @media (max-width:940px) {
@@ -670,16 +673,44 @@ main {
     .main-page {
         margin-left: 12rem;
     }
+
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .number-sections hr {
+        width: 7rem;
+    }
 }
 
-@media (max-width:875px) {
+@media (max-width:900px) {
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .form-sections {
+        gap: 1rem;
+    }
+
+    .form-sections h3 {
+        font-size: 0.8rem;
+    }
+
+    .form-sections p {
+        font-size: 0.6rem;
+    }
+
+    .number-sections hr {
+        width: 6rem;
+    }
+}
+
+@media (max-width:875px) {    
     /* ////// MAIN SECTION //////  */
+    .create-connect {
+        margin-right: 2rem;
+    }
+
     /* market place content  */
     .marketplace-content, .property-info, .create-token-container {
         padding: 2rem 2rem;
     }
 
-    .marketplace-content h1, .marketplace-content h2 {
+    .marketplace-content h1, .marketplace-content h2, .create-token-container h1 {
         font-size: 1.5rem;
     }
 }
@@ -751,8 +782,13 @@ main {
     }
 
     /* market place content  */
-    .marketplace-content {
+    .marketplace-content, .create-token-container {
         padding-top: 7rem;
+    }
+
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .number-sections hr {
+        width: 7rem;
     }
 
 }
@@ -778,6 +814,77 @@ main {
     .market-items, .most-green {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .number-sections p {
+        padding: 0.25rem 0.6rem;
+        font-size: 0.7rem;
+    }
+
+    .number-sections hr {
+        width: 6rem;
+    }
+
+    .form-sections {
+        margin-top: 1rem;
+    }
+
+    .asset-selection-form, .proof-form, .token-detail-form, .sustainability-form {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width:550px) {
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .number-sections hr {
+        width: 4.5rem;
+    }
+
+    .form-sections h3{
+        font-size: 0.6rem;
+    }
+
+    .form-sections p {
+        font-size: 0.4rem;
+    }
+
+    .asset-selection-form span {
+        font-size: 0.8rem;
+    }
+
+    .asset-selection-form input, .asset-selection-form select, .asset-selection-form textarea, .proof-form input {
+        font-size: 0.8rem;
+        height: 2rem;
+    }
+
+    .asset-selection-form textarea {
+        height: 6rem;
+    }
+
+    .asset-selection-form small, .proof-form small, .token-price-alert, .fractions-alert, .branch-alert, .how-alert, .example-alert {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:500px) {
+    /* market place content  */
+    .marketplace-content, .property-info, .create-token-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .asset-selection-form, .proof-form, .token-detail-form, .sustainability-form {
+        width: 100%;
+    }
+
+    .next-btn, .proof-next-btn, .token-detail-btn, .sustainability-btn {
+        font-size: 1rem;
+    }
+
+    
 }
 
 @media (max-width: 450px) {
@@ -796,5 +903,25 @@ main {
     .market-items, .most-green {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .number-sections hr {
+        width: 4rem;
+        border: 1px solid #D0D5D9;
+    }
     
+}
+
+@media (max-width:400px) {
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .number-sections hr {
+        width: 3.5rem;
+    }
+}
+
+@media (max-width:375px) {
+    /* ////// SECTION FOR CREAT NEW TOKEN //////  */
+    .number-sections hr {
+        width: 3rem;
+    }
 }
