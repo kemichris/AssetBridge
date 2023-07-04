@@ -572,7 +572,7 @@ main {
     border-radius: 0.5rem;
 }
 
-.token-detail-form input:focus, .sustainability-form select:focus {
+.token-detail-form input:focus, .sustainability-form select:focus, .sustainability-form textarea {
     outline: none;
 }
 
